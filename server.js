@@ -1,10 +1,9 @@
 import http from "http";
 
-const PORT = 5001;
+const PORT = process.env.PORT;
 
 const server = http.createServer((req,res)=>{
     res.setHeader('Content-Type', 'text/html');
-
     res.end('<h1>Sup Dawg</h1>');
 })
 
